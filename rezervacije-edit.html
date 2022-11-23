@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linkovi -- Start -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Linkovi -- End -->
+    <title>CinePlay - Rezervacija</title>
+  </head>
+  <body>
+    <!-- Navigacija -- Start -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./assets/img/logo.png" alt="logo" />
+            <p>CinePlay</p></a
+          >
+        </div>
+        <div class="linkovi">
+          <a href="./index.html">Početna</a>
+          <a href="./galerija.html">Galerija</a>
+          <a href="./projekcije.html">Projekcije</a>
+          <a class="nav_active" href="./rezervacija.html">Rezervacije</a>
+          <a href="./kontakt.html">Kontakt</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/vukvucko55" target="_blank">FB</a>
+          <a href="https://www.instagram.com/vukvucko55" target="_blank">IN</a>
+          <a href="https://twitter.com" target="_blank">TW</a>
+        </div>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigacija -- End -->
+    <!-- Content -- Start -->
+    <main>
+      <section class="rezervacije-tabela">
+        <div class="tabela">
+          <table>
+            <thead>
+              <th>Email</th>
+              <th>Broj Telefona</th>
+              <th>Film</th>
+              <th>Vreme Projekcije</th>
+              <th>Broj Karata</th>
+            </thead>
+            <tbody id="reservations-list"></tbody>
+          </table>
+        </div>
+        <br />
+        <div>
+          <div id="remove" class="btn">Obrisi sve iz tabele</div>
+        </div>
+      </section>
+    </main>
+    <!-- Content -- End -->
+    <!-- Footer -- Start -->
+    <footer>
+      <div class="footer">
+        <div class="footer-linkovi">
+          <a href="./kontakt.html">Kontaktirajte nas</a>
+          <a href="./mapa-sajta.html">Mapa sajta</a>
+        </div>
+        <div class="footer-text">
+          <p>
+            <span>2022 CinePlay,</span>
+            <span>Mite Ružića 75, Beograd 11000,</span>
+            <span>office@cineplay.rs,</span>
+            <span>011/1337-420</span>
+          </p>
+        </div>
+      </div>
+      <div class="author">
+        <p>All rights reserved</p>
+        <p>Vuk Aranđelović NRT-20/20</p>
+      </div>
+    </footer>
+    <!-- Footer -- End -->
+    <!-- Skripte -- Start -->
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/rezervacija.js"></script>
+    <script>
+      Reservation.load();
+    </script>
+    <!-- Skripte -- End -->
+  </body>
+</html>

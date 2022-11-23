@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linkovi -- Start -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Linkovi -- End -->
+    <title>CinePlay - Galerija</title>
+  </head>
+  <body>
+    <!-- Navigacija -- Start -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./assets/img/logo.png" alt="logo" />
+            <p>CinePlay</p></a
+          >
+        </div>
+        <div class="linkovi">
+          <a href="./index.html">Početna</a>
+          <a class="nav_active" href="./galerija.html">Galerija</a>
+          <a href="./projekcije.html">Projekcije</a>
+          <a href="./rezervacija.html">Rezervacije</a>
+          <a href="./kontakt.html">Kontakt</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/vukvucko55" target="_blank">FB</a>
+          <a href="https://www.instagram.com/vukvucko55" target="_blank">IN</a>
+          <a href="https://twitter.com" target="_blank">TW</a>
+        </div>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigacija -- End -->
+    <main>
+      <!-- Content -- Start -->
+
+      <section id="galerija" class="pozadina">
+        <h1 class="naslov">Naša galerija</h1>
+        <hr />
+        <div class="gallery">
+          <div class="slide fade">
+            <div class="slide__number">1 / 5</div>
+            <img src="./assets/img/cineplay0.jpg" />
+            <div class="slide__text">CinePlay</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__number">2 / 5</div>
+            <img src="./assets/img/cineplay1.jpg" />
+            <div class="slide__text">Šank</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__number">3 / 5</div>
+            <img src="./assets/img/cineplay2.jpg" />
+            <div class="slide__text">Sala za projekcije</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__number">4 / 5</div>
+            <img src="./assets/img/cineplay4.jpg" />
+            <div class="slide__text">Naša napredna kamera</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__number">5 / 5</div>
+            <img src="./assets/img/cineplay3.jpg" />
+            <div class="slide__text">Recepcija</div>
+          </div>
+
+          <a class="gallery__prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="gallery__next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="gallery__dots">
+          <span class="gallery__dot" onclick="currentSlide(1)"></span>
+          <span class="gallery__dot" onclick="currentSlide(2)"></span>
+          <span class="gallery__dot" onclick="currentSlide(3)"></span>
+          <span class="gallery__dot" onclick="currentSlide(4)"></span>
+          <span class="gallery__dot" onclick="currentSlide(5)"></span>
+        </div>
+      </section>
+
+      <!-- Content -- End -->
+    </main>
+    <!-- Footer -- Start -->
+    <footer>
+      <div class="footer">
+        <div class="footer-linkovi">
+          <a href="./kontakt.html">Kontaktirajte nas</a>
+          <a href="./mapa-sajta.html">Mapa sajta</a>
+        </div>
+        <div class="footer-text">
+          <p>
+            <span>2022 CinePlay,</span>
+            <span>Mite Ružića 75, Beograd 11000,</span>
+            <span>office@cineplay.rs,</span>
+            <span>011/1337-420</span>
+          </p>
+        </div>
+      </div>
+      <div class="author">
+        <p>All rights reserved</p>
+        <p>Vuk Aranđelović NRT-20/20</p>
+      </div>
+    </footer>
+    <!-- Footer -- End -->
+    <!-- Skripte -- Start -->
+    <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <!-- Skripte -- End -->
+  </body>
+</html>

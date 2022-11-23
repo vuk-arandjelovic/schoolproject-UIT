@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linkovi -- Start -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Linkovi -- End -->
+    <title>CinePlay - Kontakt</title>
+  </head>
+  <body>
+    <!-- Navigacija -- Start -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./assets/img/logo.png" alt="logo" />
+            <p>CinePlay</p></a
+          >
+        </div>
+        <div class="linkovi">
+          <a href="./index.html">Početna</a>
+          <a href="./galerija.html">Galerija</a>
+          <a href="./projekcije.html">Projekcije</a>
+          <a href="./rezervacija.html">Rezervacije</a>
+          <a class="nav_active" href="./kontakt.html">Kontakt</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/vukvucko55" target="_blank">FB</a>
+          <a href="https://www.instagram.com/vukvucko55" target="_blank">IN</a>
+          <a href="https://twitter.com" target="_blank">TW</a>
+        </div>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigacija -- End -->
+    <main>
+      <!-- Content -- Start -->
+      <div class="naslov pozadina">
+        <h2>Kontaktirajte nas</h2>
+        <p>
+          Napišite vaš predlog, pitanje ili prijavu za posao, a mi ćemo vam
+          odgovoriti u najkraćem mogućem roku!
+        </p>
+        <hr />
+      </div>
+      <section id="kontakt" class="pozadina">
+        <div class="kontakt">
+          <div class="form">
+            <form name="contact" class="contact-form">
+              <input type="text" name="name" placeholder="Ime" />
+              <input type="text" name="lastname" placeholder="Prezime" />
+              <input type="email" name="email" placeholder="E-mail" />
+              <input type="text" name="phone" placeholder="Telefon" />
+              <textarea
+                type="text"
+                name="message"
+                cols="30"
+                rows="4"
+                placeholder="Vaša poruka"
+              ></textarea>
+              <div id="submit" class="btn w-100 mb-15">Pošalji</div>
+              <a href="./kontakt-inbox.html" class="btn w-100"
+                >Pogledaj inbox</a
+              >
+            </form>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1683.4955629812289!2d20.515745826933202!3d44.79526258058075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a76127b8393%3A0x459db17abbe98cb5!2zTWl0ZSBSdcW-acSHYSA3NSwgQmVvZ3JhZA!5e0!3m2!1sen!2srs!4v1642717827972!5m2!1sen!2srs"
+              width="500"
+              height="500"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact-item">
+            <img src="./assets/img/phone.svg" alt="telefon" />
+            <div class="title">Telefon</div>
+            <div class="desc"><a href="tel:+38111337420">011/1337-420</a></div>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/img/map.svg" alt="adresa" />
+            <div class="title">Adresa</div>
+            <div class="desc">Mite Ružića, Beograd 11000</div>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/img/envelope.svg" alt="email" />
+            <div class="title">Email</div>
+            <a href="mailto:+38111337420">office@cineplay.rs</a>
+          </div>
+        </div>
+      </section>
+      <!-- Content -- End -->
+    </main>
+    <!-- Footer -- Start -->
+    <footer>
+      <div class="footer">
+        <div class="footer-linkovi">
+          <a href="./kontakt.html">Kontaktirajte nas</a>
+          <a href="./mapa-sajta.html">Mapa sajta</a>
+        </div>
+        <div class="footer-text">
+          <p>
+            <span>2022 CinePlay,</span>
+            <span>Mite Ružića 75, Beograd 11000,</span>
+            <span>office@cineplay.rs,</span>
+            <span>011/1337-420</span>
+          </p>
+        </div>
+      </div>
+      <div class="author">
+        <p>All rights reserved</p>
+        <p>Vuk Aranđelović NRT-20/20</p>
+      </div>
+    </footer>
+    <!-- Footer -- End -->
+    <!-- Skripte -- Start -->
+    <script src="./assets/js/kontakt.js"></script>
+    <script>
+      Form.initForm();
+    </script>
+    <script src="./assets/js/navigation.js"></script>
+    <!-- Skripte -- End -->
+  </body>
+</html>

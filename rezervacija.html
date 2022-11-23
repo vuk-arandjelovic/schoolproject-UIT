@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linkovi -- Start -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Linkovi -- End -->
+    <title>CinePlay - Rezervacija</title>
+  </head>
+  <body>
+    <!-- Navigacija -- Start -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./assets/img/logo.png" alt="logo" />
+            <p>CinePlay</p></a
+          >
+        </div>
+        <div class="linkovi">
+          <a href="./index.html">Početna</a>
+          <a href="./galerija.html">Galerija</a>
+          <a href="./projekcije.html">Projekcije</a>
+          <a class="nav_active" href="./rezervacija.html">Rezervacije</a>
+          <a href="./kontakt.html">Kontakt</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/vukvucko55" target="_blank">FB</a>
+          <a href="https://www.instagram.com/vukvucko55" target="_blank">IN</a>
+          <a href="https://twitter.com" target="_blank">TW</a>
+        </div>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigacija -- End -->
+    <!-- Content -- Start -->
+    <main>
+      <section id="rezervacija" class="pozadina">
+        <h1 class="naslov">Rezervacija karata</h1>
+        <form name="rezervacija" class="contact-form">
+          <input type="email" name="email" placeholder="E-mail" />
+          <input type="text" name="phone" placeholder="Telefon" />
+          <select name="movie">
+            <option value="0">-- Odaberite Film --</option>
+            <option value="Spajdermen - Put Bez Povratka">
+              Spajdermen: Put Bez Povratka
+            </option>
+            <option value="Zlatni Decko">Zlatni Dečko</option>
+            <option value="Kraljev Covek - Pocetak">
+              Kraljev Čovek: Početak
+            </option>
+            <option value="Vrisak">Vrisak</option>
+            <option value="Gucijevi">Gučijevi</option>
+          </select>
+          <div class="radio-polja">
+            <p>Odaberite vreme projekcije:</p>
+            <div class="radio-polje">
+              <input
+                type="radio"
+                id="time1"
+                value="10:30"
+                name="time"
+                checked
+              />
+              <label for="time1">10:30</label>
+            </div>
+            <div class="radio-polje">
+              <input type="radio" id="time2" value="13:45" name="time" />
+              <label for="time2">13:45</label>
+            </div>
+            <div class="radio-polje">
+              <input type="radio" id="time3" value="16:00" name="time" />
+              <label for="time3">16:00</label>
+            </div>
+          </div>
+          <p>Unesite broj karata:</p>
+          <input type="number" name="tickets" min="1" max="10" value="1" />
+
+          <div id="submit" class="btn w-100 mb-15">Pošalji</div>
+          <a class="btn w-100" href="./rezervacije-edit.html"
+            >Pogledaj rezervacije</a
+          >
+        </form>
+      </section>
+    </main>
+    <!-- Content -- End -->
+    <!-- Footer -- Start -->
+    <footer>
+      <div class="footer">
+        <div class="footer-linkovi">
+          <a href="./kontakt.html">Kontaktirajte nas</a>
+          <a href="./mapa-sajta.html">Mapa sajta</a>
+        </div>
+        <div class="footer-text">
+          <p>
+            <span>2022 CinePlay,</span>
+            <span>Mite Ružića 75, Beograd 11000,</span>
+            <span>office@cineplay.rs,</span>
+            <span>011/1337-420</span>
+          </p>
+        </div>
+      </div>
+      <div class="author">
+        <p>All rights reserved</p>
+        <p>Vuk Aranđelović NRT-20/20</p>
+      </div>
+    </footer>
+    <!-- Footer -- End -->
+    <!-- Skripte -- Start -->
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/rezervacija.js"></script>
+    <script>
+      Reservation.initForm();
+    </script>
+    <!-- Skripte -- End -->
+  </body>
+</html>
